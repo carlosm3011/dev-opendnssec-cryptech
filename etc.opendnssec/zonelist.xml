@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ZoneList>
+	<Zone name="example.com">
+		<Policy>lab</Policy>
+		<SignerConfiguration>/var/lib/opendnssec/signconf/example.com.xml</SignerConfiguration>
+		<Adapters>
+			<Input>
+				<Adapter type="File">/var/lib/opendnssec/unsigned/example.com</Adapter>
+			</Input>
+			<Output>
+				<Adapter type="File">/var/lib/opendnssec/signed/example.com</Adapter>
+			</Output>
+		</Adapters>
+	</Zone>
+
+	<Zone name="carlos.testbed.ie">
+		<Policy>semiprod</Policy>
+		<SignerConfiguration>/var/lib/opendnssec/signconf/carlos.testbed.ie.xml</SignerConfiguration>
+		<Adapters>
+			<Input>
+				<Adapter type="File">/var/lib/opendnssec/unsigned/carlos.testbed.ie</Adapter>
+			</Input>
+			<Output>
+				<Adapter type="File">/var/lib/opendnssec/signed/carlos.testbed.ie</Adapter>
+			</Output>
+		</Adapters>
+	</Zone>
+<!--
+	<Zone name="example.net">
+		<Policy>default</Policy>
+		<SignerConfiguration>/var/lib/opendnssec/signconf/example.net.xml</SignerConfiguration>
+		<Adapters>
+			<Input>
+				<Adapter type="DNS">/etc/opendnssec/addns.xml</Adapter>
+			</Input>
+			<Output>
+				<Adapter type="DNS">/etc/opendnssec/addns.xml</Adapter>
+			</Output>
+		</Adapters>
+	</Zone>
+-->
+</ZoneList>

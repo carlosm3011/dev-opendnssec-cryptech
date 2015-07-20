@@ -1,0 +1,13 @@
+$ORIGIN carlos.testbed.ie.
+$TTL 60
+@	IN		SOA stratus.labs.lacnic.net. carlos.xt6.us. (
+					2			; serial
+					360
+					360
+					1800
+					60
+			)
+			
+@	IN		NS	stratus.labs.lacnic.net.	
+a	IN		TXT 	"it blinks! it blinks!"
+b	IN		TXT	"it's turtles all the way down!"
