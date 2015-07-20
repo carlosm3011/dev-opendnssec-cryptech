@@ -1,5 +1,7 @@
 # dev-opendnssec-cryptech
 
+Author contact: carlos@xt6.us
+
 Vagrant cryptech OpenDNSSEC testbed, based on materials (and hardware!) by the Cryptech project.
 
 ## Prerequisites
